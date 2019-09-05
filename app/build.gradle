@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.springframework.boot' version '2.1.5.RELEASE'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+dependencies {
+    compile project(':shared')
+    implementation 'org.springframework.boot:spring-boot-starter'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+}
+
+mainClassName = 'com.example.app.App'

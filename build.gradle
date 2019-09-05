@@ -1,0 +1,7 @@
+subprojects {
+    group = 'com.example'
+    version '1.4.0'
+    repositories {
+        jcenter()
+    }
+}
